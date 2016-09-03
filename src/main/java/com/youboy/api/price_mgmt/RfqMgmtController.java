@@ -1,4 +1,4 @@
-package com.youboy.api.reqt_mgmt.price_mgmt;
+package com.youboy.api.price_mgmt;
 
 import com.youboy.model.PageData;
 import io.swagger.annotations.ApiParam;
