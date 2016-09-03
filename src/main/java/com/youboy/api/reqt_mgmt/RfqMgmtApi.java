@@ -1,6 +1,7 @@
-package com.youboy.api.price_mgmt;
+package com.youboy.api.reqt_mgmt;
 
 import com.youboy.model.PageData;
+import com.youboy.model.Rfg;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,6 @@ public interface RfqMgmtApi {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success", response = PageData.class)})
     @RequestMapping(value = "/rfq_mgmt",
-            consumes = {"application/json"},
             produces = {"application/json"},
             method = RequestMethod.GET)
     ResponseEntity<PageData> rfgMgmtGet(
